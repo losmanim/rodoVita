@@ -39,7 +39,6 @@
             </nav>
         </div>
     </header>
-
     <!-- Hero Section com Carrossel -->
     <section id="inicio" class="hero-carousel">
         <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
@@ -71,11 +70,11 @@
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-overlay"></div>
-                    <img src="img/0003.jpg" class="d-block w-100" alt="Animais Vivos">
+                    <img src="img/0003.jpg" class="d-block w-100" alt="Grãos e Produtos Agrícolas">
                     <div class="carousel-caption">
-                        <h1 class="animate-title">Transporte de <span>Animais Vivos</span></h1>
-                        <p class="animate-text">Segurança e cuidado com sua carga viva</p>
-                        <a href="#servicos" class="btn btn-hero">Saiba Mais</a>
+                        <h1 class="animate-title">Transporte de <span>Grãos</span></h1>
+                        <p class="animate-text">Transporte especializado de grãos e produtos agrícolas com segurança e conformidade sanitária</p>
+                        <a href="#servicos" class="btn btn-hero">Conheça Nossos Serviços</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -119,7 +118,7 @@
                 <div class="sobre-text">
                     <h3>Sua Carga em Boas Mãos</h3>
                     <p>A Rodovita Transportes LTDA é uma empresa sediada em Rondonópolis, Mato Grosso, especializada em
-                        transporte rodoviário de cargas em geral e animais vivos.</p>
+                        transporte rodoviário de cargas em geral e grãos.</p>
                     <p style="margin-top: 1rem;">Atuamos nas rotas intermunicipais, interestaduais e internacionais,
                         oferecendo soluções logísticas completas e seguras para nossos clientes.</p>
                     <p style="margin-top: 1rem;">Nossa frota moderna e equipe qualificada garantem a entrega da sua
@@ -139,34 +138,44 @@
                 <h2>Nossos Serviços</h2>
                 <p>Soluções completas em transporte rodoviário</p>
             </div>
+            <div class="servico-filters" style="text-align:center; margin-bottom:1.5rem;">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="geral">Carga Geral</button>
+                <button class="filter-btn" data-filter="graos">Grãos</button>
+                <button class="filter-btn" data-filter="internacional">Internacional</button>
+            </div>
             <div class="servicos-grid">
-                <div class="servico-card">
+                <div class="servico-card" data-category="geral">
                     <i class="fas fa-boxes"></i>
                     <h3>Carga Geral</h3>
                     <p>Transporte rodoviário de cargas em geral, intermunicipal, interestadual e internacional.</p>
                 </div>
-                <div class="servico-card">
-                    <i class="fas fa-horse"></i>
-                    <h3>Animais Vivos</h3>
-                    <p>Transporte especializado de animais vivos com todo cuidado e segurança necessários.</p>
+                <div class="servico-card" data-category="graos">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Grãos Agrícolas</h3>
+                    <p>Transporte e armazenagem de grãos e produtos agrícolas com manejo adequado e proteção contra umidade.</p>
                 </div>
-                <div class="servico-card">
+                <div class="servico-card" data-category="especiais">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Cargas Especiais</h3>
+                    <p>Transporte de cargas sensíveis e especiais com equipes treinadas, atendimento personalizado e documentação necessária.</p>
+                </div>
+                <div class="servico-card" data-category="containers">
                     <i class="fas fa-container-storage"></i>
                     <h3>Contêineres</h3>
-                    <p>Transporte de cargas em contêineres para rotas intermunicipais, interestaduais e internacionais.
-                    </p>
+                    <p>Transporte de cargas em contêineres para rotas intermunicipais, interestaduais e internacionais.</p>
                 </div>
-                <div class="servico-card">
+                <div class="servico-card" data-category="internacional">
                     <i class="fas fa-route"></i>
                     <h3>Rotas Internacionais</h3>
                     <p>Transporte rodoviário internacional com toda documentação e logística necessária.</p>
                 </div>
-                <div class="servico-card">
+                <div class="servico-card" data-category="interestadual">
                     <i class="fas fa-map-marked-alt"></i>
                     <h3>Rotas Interestaduais</h3>
                     <p>Cobertura em todo território nacional com rotas otimizadas e seguras.</p>
                 </div>
-                <div class="servico-card">
+                <div class="servico-card" data-category="logistica">
                     <i class="fas fa-truck-loading"></i>
                     <h3>Logística Completa</h3>
                     <p>Soluções logísticas personalizadas para atender às necessidades do seu negócio.</p>

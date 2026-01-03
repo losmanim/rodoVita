@@ -431,6 +431,33 @@ section {
     line-height: 1.7;
 }
 
+/* Filtros de serviços */
+.servico-filters {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.06);
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+.filter-btn.active { background: var(--verde-folha); color: var(--branco); border-color: var(--verde-folha); }
+
+/* Animações e transições para cards */
+.servico-card { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.servico-card.visible { opacity: 1; transform: translateY(0); }
+.servico-card.hidden { opacity: 0; transform: translateY(18px); pointer-events: none; height: 0; padding: 0; margin: 0; overflow: hidden; }
+
 /* Localização */
 .localizacao {
     background-color: var(--cinza-claro);
